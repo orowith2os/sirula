@@ -15,13 +15,13 @@ You should have received a copy of the GNU General Public License
 along with sirula.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-use libc::LC_ALL;
+use fuzzy_matcher::skim::SkimMatcherV2;
 use gdk::keys::constants;
 use gio::prelude::*;
 use gtk::{prelude::*, ListBoxRow};
+use libc::LC_ALL;
 use std::env::args;
 use std::{cell::RefCell, collections::HashMap, rc::Rc};
-use fuzzy_matcher::skim::SkimMatcherV2;
 
 mod consts;
 use consts::*;
